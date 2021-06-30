@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="creditCard.css">
+    </head>
+    
+    <body>
+        <div class="payment-title">
+            <h1>Credit Card Form</h1>
+        </div>
+        <div class="container">
+            <div class="creditcard">
+                    <svg version="1.1" id="cardfront" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px" y="0px" viewBox="0 0 750 471" style="enable-background:new 0 0 750 471;" xml:space="preserve">
+                        <g id="Front">
+                            <g id="CardBackground">
+                                <g id="Page-1_1_">
+                                    <g id="amex_1_">
+                                        <path id="Rectangle-1_1_" class="lightcolor grey" d="M40,0h670c22.1,0,40,17.9,40,40v391c0,22.1-17.9,40-40,40H40c-22.1,0-40-17.9-40-40V40
+                                C0,17.9,17.9,0,40,0z" />
+                                    </g>
+                                </g>
+                            </g>
+                            <text transform="matrix(1 0 0 1 60 290)" id="svgnumber" class="st2 st3 st4">.... .... .... ....</text>
+                            <text transform="matrix(1 0 0 1 70 390)" id="svgname" class="st7 st5 st6">YOUR NAME HERE</text>
+                            <text transform="matrix(1 0 0 1 480 350)" class="st7 st5 st8">valid thru</text>
+                            <g>
+                                <text transform="matrix(1 0 0 1 485 390)" id="svgexpire" class="st7 st5 st9">..<a  style="font-size: 34px;">/</a>..</text>
+                            </g>
+                        </g>
+                        <g id="Back">
+                        </g>
+                    </svg>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="field-container">
+                <input id="cardnumber" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Card Number">
+            </div>
+            <div class="field-container">
+                <input id="name" maxlength="20" type="text" placeholder="Name">
+            </div>
+            <div class="field-container">
+                <input id="expirationdate" type="text" pattern="[0-9]*" inputmode="numeric" placeholder="Valid Thru">
+            </div>
+            <div class="field-container">
+                <input id="securitycode" type="password" pattern="[0-9]*" inputmode="numeric" placeholder="CVC">
+            </div>
+            <input class="pay_button" type="button" value="PAY">
+        </div>
+    </body>
+    <script src="creditCard.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js"></script>
+</html>
